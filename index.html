@@ -1,0 +1,838 @@
+<!DOCTYPE html>
+<html lang='en'>
+<head>
+	<meta charset="UTF-8" name = "viewport" content="width=device-width, initial-scale=1">
+	<title>Great Books of All Time</title>
+	<script src="js/test.js"></script>
+	<link rel="stylesheet" type="text/css" href="css/reset.css">
+	<link rel="stylesheet" type="text/css" href="css/mobileFirst.css">
+	
+	<!-- fonts --> 
+	<link href="https://fonts.googleapis.com/css2?family=Noto+Sans&family=Raleway:wght@300&display=swap" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css2?family=Syne:wght@500&display=swap" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css2?family=Syne:wght@500&display=swap" rel="stylesheet">
+
+	</head>
+	<body onload="filterSelection('all')">		
+	<h1>Great Books of The Western World</h1>
+	<h3>by Mortimer Adler</h3>
+
+	<section>
+		<div id="myBtnContainer">
+			<button class="btnr active" onclick="filterSelection('all')">All</button>
+			<button class="btnr" onclick="filterSelection('Lit')">Literature</button>
+			<button class="btnr" onclick="filterSelection('His')">History&#38;Society</button>
+			<button class="btnr" onclick="filterSelection('Sci')">Science</button>
+			<button class="btnr" onclick="filterSelection('Phi')">Philosophy and Theology</button>
+		</div>
+		<script type="text/javascript">
+			// Add active class to the current button (highlight it)
+			// var myBtnContainer = document.getElementById("myBtnContainer");
+			var btns = document.getElementsByClassName("btnr");	
+			for (var i = 0; i < btns.length; i++){
+  				btns[i].addEventListener("click", function(){
+  					var current = document.getElementsByClassName("active");
+  					current[0].className = current[0].className.replace(" active", "");
+  					this.className += " active";
+  				});
+			}
+		</script>
+<!--Literature-->
+		<div class="row flex-container">
+			<div class="Column Lit">
+				<div class="content">
+					<div class="overlay"><span class="text infoAuthor">Homer </span><span class="text infoName">The Illiad</span></span></div>
+					<h5 class="bookName">The Illiad</h5>
+					<img src="imgs/iliad.jpg">
+					<span class="Author">Homer</span>
+				</div>
+			</div>
+		
+			<div class="Column Lit">
+				<div class="content">
+					<div class="overlay"><span class="text infoAuthor">Homer</span><span class="text infoName">The Odyssey</span></span></div>
+					<h5 class="bookName">The Odyssey</h5>
+					<img src="imgs/odyssey.jpg">
+					<span class="Author">Homer</span>
+				</div>
+			</div>
+			<div class="Column Lit">
+				<div class="content"><div class="overlay"><span class="text infoAuthor">Aeschylus</span><span class="text infoName">Plays</span></span></div>
+					
+					<h5 class="bookName">Plays</h5>
+					<img src="imgs/Aeschylus.jpg">
+					<span class="Author">Aeschylus</span>
+				</div>
+			</div>
+			<div class="Column Lit">
+				<div class="content"><div class="overlay"><span class="text infoAuthor">Sophocles</span><span class="text infoName">Plays</span></span></div>
+					
+					<h5 class="bookName">Plays</h5>
+					<img src="imgs/Sophocles.jpg">
+					<span class="Author">Sophocles</span>
+				</div>
+			</div>
+			<div class="Column Lit">
+				<div class="content"><div class="overlay"><span class="text infoAuthor">Euripides</span><span class="text infoName">Plays</span></span></div>
+					
+					<h5 class="bookName">Plays</h5>
+					<img src="imgs/Euripides.jpg">
+					<span class="Author">Euripides</span>
+				</div>
+			</div>
+			<div class="Column Lit">
+				<div class="content"><div class="overlay"><span class="text infoAuthor">Aristophanes</span><span class="text infoName">Plays</span></span></div>
+					
+					<h5 class="bookName">Plays</h5>
+					<img src="imgs/Aristophanes.jpg">
+					<span class="Author">Aristophanes</span>
+				</div>
+			</div>
+			<div class="Column Lit">
+				<div class="content"><div class="overlay"><span class="text infoAuthor">Virgil</span><span class="text infoName">Eclogues</span></span></div>
+					
+					<h5 class="bookName">Eclogues</h5>
+					<img src="imgs/Eclogues.jpg">
+					<span class="Author">Virgil</span>
+				</div>
+			</div>
+			<div class="Column Lit">
+				<div class="content"><div class="overlay"><span class="text infoAuthor">Virgil</span><span class="text infoName">Georgics</span></span></div>
+					
+					<h5 class="bookName">Georgics</h5>
+					<img src="imgs/Georgics.jpg">
+					<span class="Author">Virgil</span>
+				</div>
+			</div>
+			<div class="Column Lit">
+				<div class="content"><div class="overlay"><span class="text infoAuthor">Virgil</span><span class="text infoName">Aeneid</span></span></div>
+					
+					<h5 class="bookName">Aeneid</h5>
+					<img src="imgs/Aeneid.jpg">
+					<span class="Author">Virgil</span>
+				</div>
+			</div>
+			<div class="Column Lit">
+				<div class="content"><div class="overlay"><span class="text infoAuthor">Dante Alighieri</span><span class="text infoName">Divine Comedy</span></span></div>
+				
+					<h5 class="bookName">Divine Comedy</h5>
+					<img src="imgs/Dante.jpg">
+					<span class="Author">Dante Alighieri</span>
+				</div>
+			</div>
+			<div class="Column Lit">
+				<div class="content"><div class="overlay"><span class="text infoAuthor">Geoffrey Chaucer</span><span class="text infoName">Troilus and Criseyde</span></span></div>
+					
+					<h5 class="bookName">Troilus and Criseyde</h5>
+					<img src="imgs/Chaucer.jpg">
+					<span class="Author">Geoffrey Chaucer</span>
+				</div>
+			</div>
+			<div class="Column Lit">
+				<div class="content"><div class="overlay"><span class="text infoAuthor">Geoffrey Chaucer</span><span class="text infoName">The Canterbury Tales</span></span></div>
+					
+					<h5 class="bookName">The Canterbury Tales</h5>
+					<img src="imgs/CanterburyTales.jpg">
+					<span class="Author">Geoffrey Chaucer</span>
+				</div>
+			</div>
+			<div class="Column Lit">
+				<div class="content"><div class="overlay"><span class="text infoAuthor">François Rabelais</span><span class="text infoName">Gargantua and Pantagruel</span></span></div>
+					
+					<h5 class="bookName">Gargantua and Pantagruel</h5>
+					<img src="imgs/Rabelais.jpg">
+					<span class="Author">François Rabelais</span>
+				</div>
+			</div>
+			<div class="Column Lit">
+				<div class="content"><div class="overlay"><span class="text infoAuthor">Shakespeare</span><span class="text infoName">Plays and Sonnets</span></span></div>
+					
+					<h5 class="bookName">Plays and Sonnets</h5>
+					<img src="imgs/Shakespeare.jpg">
+					<span class="Author">Shakespeare</span>
+				</div>
+			</div>
+			<div class="Column Lit">
+				<div class="content"><div class="overlay"><span class="text infoAuthor">Cervantes</span><span class="text infoName">The History of Don Quixote</span></span></div>
+					
+					<h5 class="bookName">The History of Don Quixote</h5>
+					<img src="imgs/Cervantes.jpg">
+					<span class="Author">Cervantes</span>
+				</div>
+			</div>
+			<div class="Column Lit">
+				<div class="content"><div class="overlay"><span class="text infoAuthor">John Milton</span><span class="text infoName">English Minor Poems</span></span></div>
+					
+					<h5 class="bookName">English Minor Poems</h5>
+					<img src="imgs/MinorPoems.jpg">
+					<span class="Author">John Milton</span>
+				</div>
+			</div>
+			<div class="Column Lit">
+				<div class="content"><div class="overlay"><span class="text infoAuthor">John Milton</span><span class="text infoName">Paradise Lost</span></span></div>
+					
+					<h5 class="bookName">Paradise Lost</h5>
+					<img src="imgs/paradiseLost.jpg">
+					<span class="Author">John Milton</span>
+				</div>
+			</div>
+			<div class="Column Lit">
+				<div class="content"><div class="overlay"><span class="text infoAuthor">John Milton</span><span class="text infoName">Samson Agonistes</span></span></div>
+					
+					<h5 class="bookName">Samson Agonistes</h5>
+					<img src="imgs/Samson.jpg">
+					<span class="Author">John Milton</span>
+				</div>
+			</div>
+			<div class="Column Lit">
+				<div class="content"><div class="overlay"><span class="text infoAuthor">John Milton</span><span class="text infoName">Areopagitica</span></span></div>
+					
+					<h5 class="bookName">Areopagitica</h5>
+					<img src="imgs/Areopagitica.jpg">
+					<span class="Author">John Milton</span>
+				</div>
+			</div>
+			<div class="Column Lit">
+				<div class="content"><div class="overlay"><span class="text infoAuthor">Jonathan Swift</span><span class="text infoName">Gulliver's Travels</span></span></div>
+					
+					<h5 class="bookName">Gulliver's Travels</h5>
+					<img src="imgs/Gulliver.jpg">
+					<span class="Author">Jonathan Swift</span>
+				</div>
+			</div>
+			<div class="Column Lit">
+				<div class="content"><div class="overlay"><span class="text infoAuthor">Henry Fielding</span><span class="text infoName">The History of Tom Jones, a Foundling</span></span></div>
+					
+					<h5 class="bookName">The History of Tom Jones, a Foundling</h5>
+					<img src="imgs/Fielding.jpg">
+					<span class="Author">Henry Fielding</span>
+				</div>
+			</div>
+			<div class="Column Lit">
+				<div class="content"><div class="overlay"><span class="text infoAuthor">Laurence Sterne</span><span class="text infoName">The Life and Opinions of Shandy</span></span></div>
+					
+					<h5 class="bookName">The Life and Opinions of Shandy</h5>
+					<img src="imgs/Sterne.jpg">
+					<span class="Author">Laurence Sterne</span>
+				</div>
+			</div>
+			<div class="Column Lit">
+				<div class="content"><div class="overlay"><span class="text infoAuthor">Johann Goethe</span><span class="text infoName">Faust</span></span></div>
+					
+					<h5 class="bookName">Faust</h5>
+					<img src="imgs/Faust.jpg">
+					<span class="Author">Johann Goethe</span>
+				</div>
+			</div>
+			<div class="Column Lit">
+				<div class="content"><div class="overlay"><span class="text infoAuthor">Herman Melville</span><span class="text infoName">Moby Dick or, The Whale</span></span></div>
+					
+					<h5 class="bookName">Moby Dick or, The Whale</h5>
+					<img src="imgs/MobyDick.jpg">
+					<span class="Author">Herman Melville</span>
+				</div>
+			</div>
+			<div class="Column Lit">
+				<div class="content"><div class="overlay"><span class="text infoAuthor">Leo Tolstoy</span><span class="text infoName">War and Peace</span></span></div>
+					
+					<h5 class="bookName">War and Peace</h5>
+					<img src="imgs/Tolstoy.jpg">
+					<span class="Author">Leo Tolstoy</span>
+				</div>
+			</div>
+			<div class="Column Lit">
+				<div class="content"><div class="overlay"><span class="text infoAuthor">Dostoevsky</span><span class="text infoName">The Brothers Karamazov</span></span></div>
+					
+					<h5 class="bookName">The Brothers Karamazov</h5>
+					<img src="imgs/karamazov.jpg">
+					<span class="Author">Dostoevsky</span>
+				</div>
+			</div>
+<!--History and Society-->
+			<div class="Column His">
+				<div class="content"><div class="overlay"><span class="text infoAuthor">Herodotus</span><span class="text infoName">The History</span></span></div>
+					
+					<h5 class="bookName">The History</h5>
+					<img src="imgs/Herodotus.jpg">
+					<span class="Author">Herodotus</span>
+				</div>
+			</div>
+			<div class="Column His">
+				<div class="content"><div class="overlay"><span class="text infoAuthor">Thucydides</span><span class="text infoName">History of the Peloponnesian War</span></span></div>
+					
+					<h5 class="bookName">History of the Peloponnesian War</h5>
+					<img src="imgs/Thucydides.jpg">
+					<span class="Author">Thucydides</span>
+				</div>
+			</div>
+			<div class="Column His">
+				<div class="content"><div class="overlay"><span class="text infoAuthor">Plutarch</span><span class="text infoName">The Lives of the Noble Grecians and Romans</span></span></div>
+					
+					<h5 class="bookName">The Lives of the Noble Grecians and Romans</h5>
+					<img src="imgs/Plutarch.jpg">
+					<span class="Author">Plutarch</span>
+				</div>
+			</div>
+			<div class="Column His">
+				<div class="content"><div class="overlay"><span class="text infoAuthor">Tacitus</span><span class="text infoName">The Annals</span></span></div>
+					
+					<h5 class="bookName">The Annals</h5>
+					<img src="imgs/Annals.jpg">
+					<span class="Author">Tacitus</span>
+				</div>
+			</div>
+			<div class="Column His">
+				<div class="content"><div class="overlay"><span class="text infoAuthor">Tacitus</span><span class="text infoName">The Histories</span></span></div>
+					
+					<h5 class="bookName">The Histories</h5>
+					<img src="imgs/Tacitus.jpg">
+					<span class="Author">Tacitus </span>
+				</div>
+			</div>
+			<div class="Column His">
+				<div class="content"><div class="overlay"><span class="text infoAuthor">Machiavelli</span><span class="text infoName">The Prince</span></span></div>
+					
+					<h5 class="bookName">The Prince</h5>
+					<img src="imgs/The_prince.jpg">
+					<span class="Author">Machiavelli</span>
+				</div>
+			</div>
+			<div class="Column His">
+				<div class="content"><div class="overlay"><span class="text infoAuthor">Montaigne</span><span class="text infoName">Essays</span></span></div>
+					
+					<h5 class="bookName">Essays</h5>
+					<img src="imgs/Montagne.jpg">
+					<span class="Author">Montaigne</span>
+				</div>
+			</div>
+			<div class="Column His">
+				<div class="content"><div class="overlay"><span class="text infoAuthor">Thomas Hobbes</span><span class="text infoName">Leviathan</span></span></div>
+					
+					<h5 class="bookName">Leviathan</h5>
+					<img src="imgs/Leviathan.jpg">
+					<span class="Author">Thomas Hobbes</span>
+				</div>
+			</div>
+			<div class="Column His">
+				<div class="content"><div class="overlay"><span class="text infoAuthor">Montesquieu</span><span class="text infoName">The Spirit of the Laws</span></span></div>
+					
+					<h5 class="bookName">The Spirit of the Laws</h5>
+					<img src="imgs/Spirit_of_laws.jpg">
+					<span class="Author">Montesquieu</span>
+				</div>
+			</div>
+			<div class="Column His">
+				<div class="content"><div class="overlay"><span class="text infoAuthor">Rousseau</span><span class="text infoName">A Discourse on the Origin of Inequality</span></span></div>
+					
+					<h5 class="bookName">A Discourse on the Origin of Inequality</h5>
+					<img src="imgs/On_inequality.jpg">
+					<span class="Author">Rousseau</span>
+				</div>
+			</div>
+			<div class="Column His">
+				<div class="content"><div class="overlay"><span class="text infoAuthor">Rousseau</span><span class="text infoName">A Discourse on Political Economy</span></span></div>
+					
+					<h5 class="bookName">A Discourse on Political Economy</h5>
+					<img src="imgs/OnPoliticalEconomy.jpg">
+					<span class="Author">Rousseau</span>
+				</div>
+			</div>
+			<div class="Column His">
+				<div class="content"><div class="overlay"><span class="text infoAuthor">Rousseau</span><span class="text infoName">The Social Contract</span></span></div>
+					
+					<h5 class="bookName">The Social Contract</h5>
+					<img src="imgs/TheSocialContract.jpg">
+					<span class="Author">Rousseau</span>
+				</div>
+			</div>
+			<div class="Column His">
+				<div class="content"><div class="overlay"><span class="text infoAuthor">Adam Smith</span><span class="text infoName">An Inquiry into the Nature and Causes of the Wealth of Nations</span></span></div>
+					
+					<h5 class="bookName">An Inquiry into the Nature and Causes of the Wealth of Nations</h5>
+					<img src="imgs/AdamSmith.jpg">
+					<span class="Author">Adam Smith</span>
+				</div>
+			</div>
+			<div class="Column His">
+				<div class="content"><div class="overlay"><span class="text infoAuthor">Edward Gibbon</span><span class="text infoName">The Decline and Fall of the Roman Empire</span></span></div>
+					
+					<h5 class="bookName">The Decline and Fall of the Roman Empire</h5>
+					<img src="imgs/Gibbon.jpg">
+					<span class="Author">Edward Gibbon</span>
+				</div>
+			</div>
+			<div class="Column His">
+				<div class="content"><div class="overlay"><span class="text infoAuthor">James Boswell</span><span class="text infoName">The Life of Samuel Johnson</span></span></div>
+					
+					<h5 class="bookName">The Life of Samuel Johnson</h5>
+					<img src="imgs/Boswell.jpg">
+					<span class="Author">James Boswell</span>
+				</div>
+			</div>
+			<div class="Column His">
+				<div class="content"><div class="overlay"><span class="text infoAuthor">Hamilton,Madison,Jay</span><span class="text infoName">The Federalist</span></span></div>
+					
+					<h5 class="bookName">The Federalist</h5>
+					<img src="imgs/TheFederalist.jpg">
+					<span class="Author">Hamilton,Madison,Jay</span>
+				</div>
+			</div>
+			<div class="Column His">
+				<div class="content"><div class="overlay"><span class="text infoAuthor">John Stuart Mill</span><span class="text infoName">On Liberty</span></span></div>
+					
+					<h5 class="bookName">On Liberty</h5>
+					<img src="imgs/OnLiberty.jpg">
+					<span class="Author">John Stuart Mill</span>
+				</div>
+			</div>
+			<div class="Column His">
+				<div class="content"><div class="overlay"><span class="text infoAuthor">John Stuart Mill</span><span class="text infoName">Considerations on Representative Government</span></span></div>
+					
+					<h5 class="bookName">Considerations on Representative Government</h5>
+					<img src="imgs/RepresentativeGovernment.jpg">
+					<span class="Author">John Stuart Mill</span>
+				</div>
+			</div>
+			<div class="Column His">
+				<div class="content"><div class="overlay"><span class="text infoAuthor">John Stuart Mill</span><span class="text infoName">Utilitarianism</span></span></div>
+					
+					<h5 class="bookName">Utilitarianism</h5>
+					<img src="imgs/Utilitarism.jpg">
+					<span class="Author">John Stuart Mill</span>
+				</div>
+			</div>
+			<div class="Column His">
+				<div class="content"><div class="overlay"><span class="text infoAuthor">Karl Marx</span><span class="text infoName">Capital</span></span></div>
+					
+					<h5 class="bookName">Capital</h5>
+					<img src="imgs/Capital.jpg">
+					<span class="Author">Karl Marx</span>
+				</div>
+			</div>
+			<div class="Column His">
+				<div class="content"><div class="overlay"><span class="text infoAuthor">Marx and Engels</span><span class="text infoName">Manifesto of the Communist Party</span></span></div>
+					
+					<h5 class="bookName">Manifesto of the Communist Party</h5>
+					<img src="imgs/Manifesto.jpg">
+					<span class="Author">Marx and Engels</span>
+				</div>
+			</div>
+<!--Natural Sciences and Mathematics-->
+			<div class="Column Sci">
+				<div class="content"><div class="overlay"><span class="text infoAuthor">Hippocrates</span><span class="text infoName">Works</span></span></div>
+					
+					<h5 class="bookName">Works</h5>
+					<img src="imgs/Hippocrat.jpg">
+					<span class="Author">Hippocrates</span>
+				</div>
+			</div>
+			<div class="Column Sci">
+				<div class="content"><div class="overlay"><span class="text infoAuthor">Euclid</span><span class="text infoName">The Elements</span></span></div>
+					
+					<h5 class="bookName">The Elements</h5>
+					<img src="imgs/euclid.jpg">
+					<span class="Author">Euclid</span>
+				</div>
+			</div>
+			<div class="Column Sci">
+				<div class="content"><div class="overlay"><span class="text infoAuthor">Archimedes</span><span class="text infoName">Works</span></span></div>
+					
+					<h5 class="bookName">Works</h5>
+					<img src="imgs/Archimedes.jpg">
+					<span class="Author">Archimedes</span>
+				</div>
+			</div>
+			<div class="Column Sci">
+				<div class="content"><div class="overlay"><span class="text infoAuthor">Apollonius Perga</span><span class="text infoName">On Conic Sections</span></span></div>
+					
+					<h5 class="bookName">On Conic Sections</h5>
+					<img src="imgs/Perga.jpg">
+					<span class="Author">Apollonius Perga</span>
+				</div>
+			</div>
+			<div class="Column Sci">
+				<div class="content"><div class="overlay"><span class="text infoAuthor">Nicomachus of Gerasa</span><span class="text infoName">Introduction to Arithmetic</span></span></div>
+					
+					<h5 class="bookName">Introduction to Arithmetic</h5>
+					<img src="imgs/nicomachus.jpg">
+					<span class="Author">Nicomachus of Gerasa</span>
+				</div>
+			</div>
+			<div class="Column Sci">
+				<div class="content"><div class="overlay"><span class="text infoAuthor">Galen</span><span class="text infoName">On the Natural Faculties</span></span></div>
+					
+					<h5 class="bookName">On the Natural Faculties</h5>
+					<img src="imgs/galen.jpg">
+					<span class="Author">Galen</span>
+				</div>
+			</div>
+			<div class="Column Sci">
+				<div class="content"><div class="overlay"><span class="text infoAuthor">Ptolemy</span><span class="text infoName">Almagest</span></span></div>
+					
+					<h5 class="bookName">Almagest</h5>
+					<img src="imgs/almagest.jpg">
+					<span class="Author">Ptolemy</span>
+				</div>
+			</div>
+			<div class="Column Sci">
+				<div class="content"><div class="overlay"><span class="text infoAuthor">Copernicus</span><span class="text infoName">On the Revolutions of Heavenly Spheres</span></span></div>
+					
+					<h5 class="bookName">On the Revolutions of Heavenly Spheres</h5>
+					<img src="imgs/Copernicus.jpg">
+					<span class="Author">Copernicus</span>
+				</div>
+			</div>
+			<div class="Column Sci">
+				<div class="content"><div class="overlay"><span class="text infoAuthor">William Gilbert</span><span class="text infoName">On the Loadstone and Magnetic Bodies</span></span></div>
+					
+					<h5 class="bookName">On the Loadstone and Magnetic Bodies</h5>
+					<img src="imgs/Gilbert.jpg">
+					<span class="Author">William Gilbert</span>
+				</div>
+			</div>
+			<div class="Column Sci">
+				<div class="content"><div class="overlay"><span class="text infoAuthor">Galileo Galilei</span><span class="text infoName">Dialogues Concerning the Two New Sciences</span></span></div>
+					
+					<h5 class="bookName">Dialogues Concerning the Two New Sciences</h5>
+					<img src="imgs/Galilei.jpg">
+					<span class="Author">Galileo Galilei</span>
+				</div>
+			</div>
+			<div class="Column Sci">
+				<div class="content"><div class="overlay"><span class="text infoAuthor">Johannes Kepler</span><span class="text infoName">Epitome of Copernican Astronomy</span></span></div>
+					
+					<h5 class="bookName">Epitome of Copernican Astronomy</h5>
+					<img src="imgs/Kepler.jpg">
+					<span class="Author">Johannes Kepler</span>
+				</div>
+			</div>
+			<div class="Column Sci">
+				<div class="content"><div class="overlay"><span class="text infoAuthor">Johannes Kepler</span><span class="text infoName">The Harmonies of the World</span></span></div>
+					
+					<h5 class="bookName">The Harmonies of the World</h5>
+					<img src="imgs/Kepler2.jpg">
+					<span class="Author">Johannes Kepler</span>
+				</div>
+			</div>
+			<div class="Column Sci">
+				<div class="content"><div class="overlay"><span class="text infoAuthor">William Harvey</span><span class="text infoName">On the Motion of the Heart and Blood in Animals</span></span></div>
+					
+					<h5 class="bookName">On the Motion of the Heart and Blood in Animals</h5>
+					<img src="imgs/harvey.jpg">
+					<span class="Author">William Harvey</span>
+				</div>
+			</div>
+			<div class="Column Sci">
+				<div class="content"><div class="overlay"><span class="text infoAuthor">William Harvey</span><span class="text infoName">On the Circulation of Blood</span></span></div>
+					
+					<h5 class="bookName">On the Circulation of Blood</h5>
+					<img src="imgs/harvey2.jpg">
+					<span class="Author">William Harvey</span>
+				</div>
+			</div>
+			<div class="Column Sci">
+				<div class="content"><div class="overlay"><span class="text infoAuthor">Christian Huygens</span><span class="text infoName">Treatise on Light</span></span></div>
+					
+					<h5 class="bookName">Treatise on Light</h5>
+					<img src="imgs/Huygens.jpg">
+					<span class="Author">Christian Huygens</span>
+				</div>
+			</div>
+			<div class="Column Sci">
+				<div class="content"><div class="overlay"><span class="text infoAuthor">Sir Isaac Newton</span><span class="text infoName">Mathematical Principles of Natural Philosophy</span></span></div>
+					
+					<h5 class="bookName">Mathematical Principles of Natural Philosophy</h5>
+					<img src="imgs/Newton.jpg">
+					<span class="Author">Sir Isaac Newton</span>
+				</div>
+			</div>
+			<div class="Column Sci">
+				<div class="content"><div class="overlay"><span class="text infoAuthor">Sir Isaac Newton</span><span class="text infoName">Optics</span></span></div>
+					
+					<h5 class="bookName">Optics</h5>
+					<img src="imgs/newton2.jpg">
+					<span class="Author">Sir Isaac Newton</span>
+				</div>
+			</div>
+			<div class="Column Sci">
+				<div class="content"><div class="overlay"><span class="text infoAuthor">Lavoisier</span><span class="text infoName">Elements of Chemistry</span></span></div>
+					
+					<h5 class="bookName">Elements of Chemistry</h5>
+					<img src="imgs/lavoisier.jpg">
+					<span class="Author">Lavoisier</span>
+				</div>
+			</div>
+			<div class="Column Sci">
+				<div class="content"><div class="overlay"><span class="text infoAuthor">Fourier</span><span class="text infoName">Analytical Theory of Heat</span></span></div>
+					
+					<h5 class="bookName">Analytical Theory of Heat</h5>
+					<img src="imgs/Fourier.jpg">
+					<span class="Author">Fourier</span>
+				</div>
+			</div>
+			<div class="Column Sci">
+				<div class="content"><div class="overlay"><span class="text infoAuthor">Michael Faraday</span><span class="text infoName">Experimental Researches in Electricity</span></span></div>
+					
+					<h5 class="bookName">Experimental Researches in Electricity</h5>
+					<img src="imgs/faraday.jpg">
+					<span class="Author">Michael Faraday</span>
+				</div>
+			</div>
+			<div class="Column Sci">
+				<div class="content"><div class="overlay"><span class="text infoAuthor">Charles Darwin</span><span class="text infoName">The Origin of Species by Means of Natural Selection</span></span></div>
+					
+					<h5 class="bookName">The Origin of Species by Means of Natural Selection</h5>
+					<img src="imgs/darwin.jpg">
+					<span class="Author">Charles Darwin</span>
+				</div>
+			</div>
+
+			<div class="Column Sci">
+				<div class="content"><div class="overlay"><span class="text infoAuthor">Charles Darwin</span><span class="text infoName">The Descent of Man, and Selection in Relation to Sex</span></span></div>
+					
+					<h5 class="bookName">The Descent of Man, and Selection in Relation to Sex</h5>
+					<img src="imgs/darwin2.jpg">
+					<span class="Author">Charles Darwin</span>
+				</div>
+			</div>
+			<div class="Column Sci">
+				<div class="content"><div class="overlay"><span class="text infoAuthor">William James</span><span class="text infoName">The Principles of Psychology</span></span></div>
+					
+					<h5 class="bookName">The Principles of Psychology</h5>
+					<img src="imgs/james.jpg">
+					<span class="Author">William James</span>
+				</div>
+			</div>
+			<div class="Column Sci">
+				<div class="content"><div class="overlay"><span class="text infoAuthor">Sigmund Freud</span><span class="text infoName">Main Works</span></span></div>
+					
+					<h5 class="bookName">Main Works</h5>
+					<img src="imgs/freud.jpg">
+					<span class="Author">Sigmund Freud</span>
+				</div>
+			</div>
+<!--Philosophy and Theology-->
+			<div class="Column Phi">
+				<div class="content"><div class="overlay"><span class="text infoAuthor">Plato</span><span class="text infoName">The Dialogues</span></span></div>
+					
+					<h5 class="bookName">The Dialogues</h5>
+					<img src="imgs/plato.jpeg">
+					<span class="Author">Plato</span>
+				</div>
+			</div>
+			<div class="Column Phi">
+				<div class="content"><div class="overlay"><span class="text infoAuthor">Plato</span><span class="text infoName">The Seventh Letter</span></span></div>
+					
+					<h5 class="bookName">The Seventh Letter</h5>
+					<img src="imgs/seventhLetter.jpg">
+					<span class="Author">Plato</span>
+				</div>
+			</div>
+			<div class="Column Phi">
+				<div class="content"><div class="overlay"><span class="text infoAuthor">Aristotle</span><span class="text infoName">Works</span></span></div>
+					
+					<h5 class="bookName">Works</h5>
+					<img src="imgs/aristotle.jpg">
+					<span class="Author">Aristotle</span>
+				</div>
+			</div>
+			<div class="Column Phi">
+				<div class="content"><div class="overlay"><span class="text infoAuthor">Lucretius</span><span class="text infoName">On the Nature of Things</span></span></div>
+					
+					<h5 class="bookName">On the Nature of Things</h5>
+					<img src="imgs/lucretius.jpg">
+					<span class="Author">Lucretius</span>
+				</div>
+			</div>
+			<div class="Column Phi">
+				<div class="content"><div class="overlay"><span class="text infoAuthor">Epictetus</span><span class="text infoName">The Discourses</span></span></div>
+					
+					<h5 class="bookName">The Discourses</h5>
+					<img src="imgs/epictetus.jpg">
+					<span class="Author">Epictetus</span>
+				</div>
+			</div>
+			<div class="Column Phi">
+				<div class="content"><div class="overlay"><span class="text infoAuthor">Marcus Aurelius</span><span class="text infoName">The Meditations</span></span></div>
+					
+					<h5 class="bookName">The Meditations</h5>
+					<img src="imgs/meditations.jpg">
+					<span class="Author">Marcus Aurelius</span>
+				</div>
+			</div>
+			<div class="Column Phi">
+				<div class="content"><div class="overlay"><span class="text infoAuthor">Plotinus</span><span class="text infoName">The Six Enneads</span></span></div>
+					
+					<h5 class="bookName">The Six Enneads</h5>
+					<img src="imgs/plotinus.jpg">
+					<span class="Author">Plotinus</span>
+				</div>
+			</div>
+			<div class="Column Phi">
+				<div class="content"><div class="overlay"><span class="text infoAuthor">Augustine</span><span class="text infoName">The Confessions</span></span></div>
+					
+					<h5 class="bookName">The Confessions</h5>
+					<img src="imgs/theConfessions.jpg">
+					<span class="Author">Augustine</span>
+				</div>
+			</div>
+			<div class="Column Phi">
+				<div class="content"><div class="overlay"><span class="text infoAuthor">Augustine</span><span class="text infoName">The City of God</span></span></div>
+					
+					<h5 class="bookName">The City of God</h5>
+					<img src="imgs/TheCityofGod.jpg">
+					<span class="Author">Augustine</span>
+				</div>
+			</div>
+			<div class="Column Phi">
+				<div class="content"><div class="overlay"><span class="text infoAuthor">Augustine</span><span class="text infoName">On Christian Doctrine</span></span></div>
+					
+					<h5 class="bookName">On Christian Doctrine</h5>
+					<img src="imgs/OnChristianDoctrine.jpg">
+					<span class="Author">Augustine</span>
+				</div>
+			</div>
+			<div class="Column Phi">
+				<div class="content"><div class="overlay"><span class="text infoAuthor">Thomas Aquinas</span><span class="text infoName">Summa Theologica</span></span></div>
+					
+					<h5 class="bookName">Summa Theologica</h5>
+					<img src="imgs/Summa.jpg">
+					<span class="Author">Thomas Aquinas</span>
+				</div>
+			</div>
+			<div class="Column Phi">
+				<div class="content"><div class="overlay"><span class="text infoAuthor">Sir Francis Bacon</span><span class="text infoName">The Advancement of Learning</span></span></div>
+					
+					<h5 class="bookName">The Advancement of Learning</h5>
+					<img src="imgs/bacon1.jpg">
+					<span class="Author">Sir Francis Bacon</span>
+				</div>
+			</div>
+			<div class="Column Phi">
+				<div class="content"><div class="overlay"><span class="text infoAuthor">Sir Francis Bacon</span><span class="text infoName">Novum Organum</span></span></div>
+					
+					<h5 class="bookName">Novum Organum</h5>
+					<img src="imgs/bacon2.jpg">
+					<span class="Author">Sir Francis Bacon</span>
+				</div>
+			</div>
+			<div class="Column Phi">
+				<div class="content"><div class="overlay"><span class="text infoAuthor">Sir Francis Bacon</span><span class="text infoName">New Atlantis</span></span></div>
+					
+					<h5 class="bookName">New Atlantis</h5>
+					<img src="imgs/the-new-atlantis.jpg">
+					<span class="Author">Sir Francis Bacon</span>
+				</div>
+			</div>
+			<div class="Column Phi">
+				<div class="content"><div class="overlay"><span class="text infoAuthor">René Descartes</span><span class="text infoName">Philosophical Works</span></div>
+					
+					<h5 class="bookName">Philosophical Works</h5>
+					<img src="imgs/decartes1.jpg">
+					<span class="Author">René Descartes</span>
+				</div>
+			</div>
+			<div class="Column Phi">
+				<div class="content"><div class="overlay"><span class="text infoAuthor">René Descartes</span><span class="text infoName">The Geometry</span></span></div>
+					
+					<h5 class="bookName">The Geometry</h5>
+					<img src="imgs/decartes2.jpg">
+					<span class="Author">René Descartes</span>
+				</div>
+			</div>
+			<div class="Column Phi">
+				<div class="content"><div class="overlay"><span class="text infoAuthor">Blaise Pascal</span><span class="text infoName">The Provincial Letters</span></span></div>
+					
+					<h5 class="bookName">The Provincial Letters</h5>
+					<img src="imgs/pascal.jpg">
+					<span class="Author">Blaise Pascal</span>
+				</div>
+			</div>
+			<div class="Column Phi">
+				<div class="content"><div class="overlay"><span class="text infoAuthor">Blaise Pascal</span><span class="text infoName">Pensées</span></span></div>
+					
+					<h5 class="bookName">Pensées</h5>
+					<img src="imgs/pascal2.jpg">
+					<span class="Author">Blaise Pascal</span>
+				</div>
+			</div>
+			<div class="Column Phi">
+				<div class="content"><div class="overlay"><span class="text infoAuthor">Spinoza</span><span class="text infoName">Ethics</span></span></div>
+					
+					<h5 class="bookName">Ethics</h5>
+					<img src="imgs/spinoza.jpg">
+					<span class="Author">Spinoza</span>
+				</div>
+			</div>
+			<div class="Column Phi">
+				<div class="content"><div class="overlay"><span class="text infoAuthor">John Locke</span><span class="text infoName">A Letter Concerning Toleration</span></span></div>
+					
+					<h5 class="bookName">A Letter Concerning Toleration</h5>
+					<img src="imgs/locke1.jpg">
+					<span class="Author">John Locke</span>
+				</div>
+			</div>
+			<div class="Column Phi">
+				<div class="content"><div class="overlay"><span class="text infoAuthor">John Locke</span><span class="text infoName">Concerning Civil Government, Second Essay</span></span></div>
+					
+					<h5 class="bookName">Concerning Civil Government, Second Essay</h5>
+					<img src="imgs/locke2.jpg">
+					<span class="Author">John Locke</span>
+				</div>
+			</div>
+			<div class="Column Phi">
+				<div class="content"><div class="overlay"><span class="text infoAuthor">John Locke</span><span class="text infoName">An Essay Concerning Human Understanding</span></span></div>
+					
+					<h5 class="bookName">An Essay Concerning Human Understanding</h5>
+					<img src="imgs/locke3.jpg">
+					<span class="Author">John Locke</span>
+				</div>
+			</div>
+			<div class="Column Phi">
+				<div class="content"><div class="overlay"><span class="text infoAuthor">George Berkeley</span><span class="text infoName">The Principles of Human Knowledge</span></span></div>
+					
+					<h5 class="bookName">The Principles of Human Knowledge</h5>
+					<img src="imgs/berkley.jpg">
+					<span class="Author">George Berkeley</span>
+				</div>
+			</div>
+			<div class="Column Phi">
+				<div class="content"><div class="overlay"><span class="text infoAuthor">David Hume</span><span class="text infoName">An Enquiry Concerning Human Understanding</span></span></div>
+					
+					<h5 class="bookName">An Enquiry Concerning Human Understanding</h5>
+					<img src="imgs/hume.jpg">
+					<span class="Author">David Hume</span>
+				</div>
+			</div>
+			<div class="Column Phi">
+				<div class="content"><div class="overlay"><span class="text infoAuthor">Immanuel Kant</span><span class="text infoName">The main philosophical Works</span></span></div>
+					
+					<h5 class="bookName">The main philosophical Works</h5>
+					<img src="imgs/kant.jpg">
+					<span class="Author">Immanuel Kant</span>
+				</div>
+			</div>
+			<div class="Column Phi">
+				<div class="content"><div class="overlay"><span class="text infoAuthor">Hegel</span><span class="text infoName">The Philosophy of Right</span></span></div>
+					
+					<h5 class="bookName">The Philosophy of Right</h5>
+					<img src="imgs/hegel1.jpg">
+					<span class="Author">Hegel</span>
+				</div>
+			</div>
+			<div class="Column Phi">
+				<div class="content"><div class="overlay"><span class="text infoAuthor">Hegel</span><span class="text infoName">The Philosophy of History</span></span></div>
+					
+					<h5 class="bookName">The Philosophy of History</h5>
+					<img src="imgs/hegel2.jpg">
+					<span class="Author">Hegel</span>
+				</div>
+			</div>
+			
+			
+
+		</div>
+
+	</section>
+	</body>
+	</html>
